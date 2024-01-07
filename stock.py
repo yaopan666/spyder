@@ -9,13 +9,13 @@ import time
 import akshare as ak
 
 
-@st.cache_data
+#@st.cache_data
 # 获取股票实时行情数据
 def get_stock_data():
     data = ak.bond_zh_hs_cov_spot()
     return data
 
-st.title('股票实时行情')
+st.title('可转债实时行情')
 
 # 在页面上显示实时数据
 while True:
